@@ -1,1 +1,3 @@
-#一个基于phalcon的mvc骨架，根据自己需求，组织代码和增加类库
+#一个基于phalcon的mvc骨架，有yii框架的影子，组织代码和增加类库
+
+依赖phalcon扩展，请先安装phalcon扩展
