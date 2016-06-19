@@ -3,31 +3,18 @@
 namespace MyApp\Controllers;
 
 use MyApp\Controllers\ControllerBase;
-use MyApp\Models\Counters;
+use MyApp\Services\CountersService;
 
 class IndexController extends ControllerBase
 {
 
     public function indexAction()
     {
-        $this->logger->critical("This is a critical message");
-        $counters = new Counters();
-        $result   = $counters->getByQuery();
-        foreach ($result as $value) {
-            var_dump($value->id);
-            var_dump($value->name);
-            var_dump($value->value);
-        }
+        $countersService = new CountersService($this->di);
+        $countersService->demo();
 
-        $result = $counters->getByQueryBuilder();
-        foreach ($result as $value) {
-            var_dump($value->id);
-            var_dump($value->name);
-            var_dump($value->value);
-        }
-        $counters->findOrm();
+        $this->view->disable();
 
-        exit;
     }
 
 }

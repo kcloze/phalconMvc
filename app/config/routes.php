@@ -1,6 +1,6 @@
 <?php
 
-$router = new Phalcon\Mvc\Router(false);
+$router = new Phalcon\Mvc\Router();
 
 $router->add('/:controller/:action/:params', [
     'namespace'  => 'MyApp\Controllers',
@@ -14,11 +14,11 @@ $router->add('/:controller', [
     'controller' => 1,
 ]);
 
-$router->add('/admin/:controller/:action/:params', [
+$router->add('/admin/:controller/:action', [
     'namespace'  => 'MyApp\Controllers\Admin',
     'controller' => 1,
     'action'     => 2,
-    'params'     => 3,
+    //'params' => 3,
 ]);
 
 $router->add('/admin/:controller', [
