@@ -30,4 +30,16 @@ class CountersService extends ServiceBase
 
     }
 
+    public function getData()
+    {
+        $cacheKey = 'my.cache';
+
+        $data = $this->cache->get($cacheKey);
+        if ($data === null) {
+            $data = array('kcloze', 'hello');
+            $this->cache->save($cacheKey, $data, 3600);
+        }
+        var_dump($this->cache->get($cacheKey));
+    }
+
 }

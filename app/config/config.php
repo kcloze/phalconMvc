@@ -24,4 +24,11 @@ return new \Phalcon\Config([
     'logger'      => [
         'application' => APP_PATH . '/app/runtime/application.log',
     ],
+    'redis'       => [
+        'host'     => '127.0.0.1',
+        'port'     => '6379',
+        'auth'     => '',
+        'lifetime' => '3600',
+
+    ],
 ]);

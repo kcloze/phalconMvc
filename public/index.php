@@ -20,7 +20,7 @@ try {
     /**
      * Read services
      */
-    include APP_PATH . "/app/config/services.php";
+    include APP_PATH . "/app/config/main.php";
 
     /**
      * Handle the request

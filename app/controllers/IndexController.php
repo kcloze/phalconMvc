@@ -10,8 +10,9 @@ class IndexController extends ControllerBase
 
     public function indexAction()
     {
-        $countersService = new CountersService($this->di);
-        $countersService->demo();
+
+        $countersService = new CountersService;
+        $countersService->getData();
 
         $this->view->disable();
 
