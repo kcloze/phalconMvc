@@ -6,6 +6,7 @@
 * mvc+s，增加service层，不用在controller里面写逻辑代码，让controller保持清爽
 * 受Yii框架的影响，生成的文件都放在runtime里面，保证该目录可写
 * cli应用使用：cd app，php run；tasks目录下文件为cli应用逻辑
+* 没有用多模块，而是用多层级controller，适合中小型应用
 
 
 ## 安装
