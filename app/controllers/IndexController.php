@@ -12,7 +12,8 @@ class IndexController extends ControllerBase
     {
 
         $countersService = new CountersService;
-        $countersService->getData();
+        $countersService->demo();
+        //$countersService->getData();
 
         $this->view->disable();
 
