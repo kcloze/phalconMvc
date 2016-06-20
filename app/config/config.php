@@ -1,30 +1,32 @@
 <?php
 
-defined('APP_PATH') || define('APP_PATH', realpath('.'));
-
 return new \Phalcon\Config([
-    'database'    => [
+    'version'      => '1.0',
+    'printNewLine' => true,
+
+    'database'     => [
         'adapter'  => 'Mysql',
-        'host'     => '127.0.0.1',
+        'host'     => '192.168.9.24',
         'username' => 'test',
-        'password' => '123kcloze',
+        'password' => 'test',
         'dbname'   => 'test',
         'charset'  => 'utf8',
     ],
-    'application' => [
+    'application'  => [
         'controllersDir' => APP_PATH . '/app/controllers/',
         'modelsDir'      => APP_PATH . '/app/models/',
         //'migrationsDir'  => APP_PATH . '/app/migrations/',
         'viewsDir'       => APP_PATH . '/app/views/',
         'pluginsDir'     => APP_PATH . '/app/plugins/',
         'libraryDir'     => APP_PATH . '/app/library/',
+        'taskDir'        => APP_PATH . '/app/tasks/',
         'cacheDir'       => APP_PATH . '/app/runtime/cache/',
         'baseUri'        => '/simple/',
     ],
-    'logger'      => [
+    'logger'       => [
         'application' => APP_PATH . '/app/runtime/application.log',
     ],
-    'redis'       => [
+    'redis'        => [
         'host'     => '127.0.0.1',
         'port'     => '6379',
         'auth'     => '',
