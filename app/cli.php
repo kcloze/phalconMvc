@@ -1,7 +1,8 @@
 <?php
-
 use Phalcon\Cli\Console as ConsoleApp;
 
+error_reporting(E_ALL);
+date_default_timezone_set('Asia/Shanghai');
 define('APP_PATH', __DIR__ . '/..');
 
 /**

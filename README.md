@@ -5,7 +5,7 @@
 * 依赖phalcon扩展，性能强劲
 * mvc+s，增加service层，不用在controller里面写逻辑代码，让controller保持清爽
 * 受Yii框架的影响，生成的文件都放在runtime里面，保证该目录可写
-* cli应用入口：cd app；php run
+* cli应用使用：cd app，php run；tasks目录下文件为cli action入口
 
 
 ## 安装
