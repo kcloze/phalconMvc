@@ -14,12 +14,8 @@
 
   </head>
   <body>
-    <div class="page-group">
-        
-            {{ content() }}
-    </div>
+{{ content() }}
 
-    <div class="footer">{% include "shared/footer.volt" %}</div>
-
+<div class="footer">{% include "../shared/footer.volt" %}</div>
   </body>
 </html>

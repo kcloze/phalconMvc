@@ -11,7 +11,7 @@ class TestController extends ControllerBase
     {
 
         $this->view->setVar("title", "phalcon template");
-        //$this->view->render('test/index');
+        $this->view->render('test/index', 'index');
 
     }
 
