@@ -1,4 +1,4 @@
-#  a simple Phalcon skeleton with sub controller,cli,mvc +service
+#  A simple Phalcon skeleton with sub controller,cli,mvc +service
 
 ## Features
 
@@ -9,7 +9,7 @@
 * Have no sub modules,I use sub controller,it's enough for Small and medium-sized application.
 
 
-## install
+## Install
 * require phalcon extension, more info: https://github.com/phalcon/cphalcon.
 * git clone https://github.com/kcloze/phalconMvc.git.
 * import  database.sql to mysql database.
